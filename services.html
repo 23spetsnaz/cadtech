@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Special Promo - Cadtech</title>
+  <link rel="stylesheet" href="../styles/services.css">
+  
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/image/public/logo.jpg" alt="CADTECH Logo" class="logo-img">
+      <span class="logo-text">CADTECH</span>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Home Section -->
+  <section id="home" class="container">
+    <div class="header">SPECIAL PROMO</div>
+    <div class="sub-header">Laptop, Computer Sets, Mini CPU, WiFi Vendo</div>
+    <div class="trusted">TRUSTED SINCE<br>2019</div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="container">
+    <h2>Our Products</h2>
+    <div class="products">
+
+  <!-- Modal for Full Image -->
+<div id="imageModal" class="modal">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<div class="product">
+  <img src="/image/public/minicpus.jpg.png" alt="Mini CPU" class="product-img" onclick="openModal('/image/public/minicpus.jpg.png')">
+  <div><strong>Mini CPU</strong></div>
+  <div class="price">₱6,500</div>
+</div>
+
+<div class="product">
+  <img src="/image/public/wifivendo.jpg" alt="Mini CPU" class="product-img" onclick="openModal('/image/public/wifivendo.jpg')">
+  <div><strong>Wifi Vendo</strong></div>
+  <div class="price">₱9,500</div>
+</div>
+
+<div class="product">
+  <img src="/image/public/gamingset.jpg" alt="Mini CPU" class="product-img" onclick="openModal('/image/public/gamingset.jpg')">
+  <div><strong>Gaming Set</strong></div>
+  <div class="price">₱13,800</div>
+</div>
+
+<div class="product">
+  <img src="/image/public/cadlaptop.jpg" alt="Mini CPU" class="product-img" onclick="openModal('/image/public/cadlaptop.jpg')">
+  <div><strong>Laptop</strong></div>
+  <div class="price">₱12,500</div>
+</div>
+
+<div class="product">
+  <img src="/image/public/officeset.png" alt="Mini CPU" class="product-img" onclick="openModal('/image/public/officeset.png')">
+  <div><strong>Office Set</strong></div>
+  <div class="price">₱7,800</div>
+ </div>
+ </div>
+ <script src="../src/script.js"></script>
+</body>
+</html>
